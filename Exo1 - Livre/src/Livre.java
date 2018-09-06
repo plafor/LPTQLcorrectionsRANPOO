@@ -1,5 +1,6 @@
 public class Livre {
 
+	private static final int NB_PAGES_DEFAUT = -1;
 	private static final String EDITEUR_DEFAUT = "NC";
 	private static int numLivre = 1;
 
@@ -45,7 +46,7 @@ public class Livre {
 	// constructeurs
 
 	public Livre(String auteur, String titre) {
-		this(auteur, titre, EDITEUR_DEFAUT, 0);
+		this(auteur, titre, EDITEUR_DEFAUT, NB_PAGES_DEFAUT);
 	}
 
 	public Livre(String auteur, String titre, String editeur, int pages) {
@@ -57,7 +58,7 @@ public class Livre {
 	}
 
 	public String toString() {
-		if (nbPages != 0)
+		if (nbPages != NB_PAGES_DEFAUT)
 			return "[" + numero + "] " + auteur + " - " + titre + "  (" + editeur + ") " + nbPages + " p.";
 		else
 			return "[" + numero + "] " + auteur + " - " + titre;
