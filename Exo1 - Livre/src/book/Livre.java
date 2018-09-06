@@ -1,3 +1,4 @@
+package book;
 public class Livre {
 
 	private static final int NB_PAGES_DEFAUT = -1;

@@ -1,3 +1,4 @@
+package book;
 public class TestLivre {
 
 	public static void main(String[] args) {
